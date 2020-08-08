@@ -63,7 +63,7 @@
         <p>{{ post.bibtex }}</p>
         <script>
             function pop() {
-                prompt("BibTeX", bitex);
+                prompt("BibTeX", {{ post.bibtex }});
             }
         </script>
         <button onclick="pop()">BibTeX</button>
