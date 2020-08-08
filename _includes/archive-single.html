@@ -60,7 +60,7 @@
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}
     {% if post.bibtex %}
-        <p>post.bibtex</p>
+        <p>{{ post.bibtex }}</p>
         <script>
             function pop() {
                 prompt("BibTeX", bitex);
