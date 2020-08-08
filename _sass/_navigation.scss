@@ -176,7 +176,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: $nav-height;
+  /*min-height: $nav-height;*/
   background: $background-color;
 
   a {
@@ -202,7 +202,7 @@
   &__toggle {
     -ms-flex-item-align: center;
     align-self: center;
-    height: $nav-toggle-height;
+    height: 100%;
     border: 0;
     outline: none;
     background-color: transparent;
