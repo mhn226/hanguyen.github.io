@@ -61,7 +61,9 @@
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }} </p>
     {% elsif post.paperurl %}
-      <button>PDF</button>
+      <a href="/images/myw3schoolsimage.jpg" download>
+        <button>PDF</button>
+      </a>
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}
     {% if post.bibtex %}
