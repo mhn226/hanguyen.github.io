@@ -44,7 +44,7 @@
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
-      {% post.paperurl %}
+      {% if post.paperurl %}
         <p class="p-inline"><em>if you click button</em></p>
         <a href=" {{ post.paperurl }} " download>
           <button class="pdfbutton"><img src="{{ base_path }}/images/rsz_app-pdf-icon.png" width="40px" height="40px" border="0"/></button>
