@@ -60,7 +60,7 @@
       <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }} </p>
-    {% elsif post.paperurl %}
+    {% if post.paperurl %}
       <a href=" {{ post.paperurl }} " download>
         <button>PDF</button>
       </a>
