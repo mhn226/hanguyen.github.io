@@ -53,14 +53,6 @@ layout: default
             <button>PDF</button>
           </a>
         {% endif %}
-        {% if page.bibtex %}
-          <script>
-            function pop() {
-              prompt("BibTeX", "{{ page.bibtex }}");
-            }
-          </script>
-          <button onclick="pop()">BibTeX</button>
-        {% endif %}
     
         </header>
       {% endunless %}
