@@ -66,7 +66,7 @@
     {% if post.bibtex %}
         <script>
             function pop() {
-                prompt("BibTeX", "{{ bibtex }}");
+                prompt("BibTeX", "{{ post.bibtex }}");
             }
         </script>
         <button onclick="pop()">BibTeX</button>
