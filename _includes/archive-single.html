@@ -12,10 +12,6 @@
   {% assign title = post.title %}
 {% endif %}
 
-function pop() {
-    prompt("Enter something!", "Text");
-}
-
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -63,6 +59,10 @@ function pop() {
     {% elsif post.paperurl %}
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}
+
+    function pop() {
+    prompt("Enter something!", "Text");
+    }
     <button onclick="pop()">Click</button>
     
 
