@@ -13,10 +13,10 @@
   padding-left: 1em;
   padding-right: 1em;
   font-family: $sans-serif;
-  -webkit-animation: $intro-transition;
-  animation: $intro-transition;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
+  -webkit-animation: intro 0.3s both;
+          animation: intro 0.3s both;
+  -webkit-animation-delay: 0.30s;
+          animation-delay: 0.30s;
 
   @include breakpoint($x-large) {
     max-width: $x-large;
