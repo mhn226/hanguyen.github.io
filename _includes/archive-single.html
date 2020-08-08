@@ -59,12 +59,14 @@
     {% elsif post.paperurl %}
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}
-    <script>
-        function pop() {
-        prompt("Enter something!", "Text");
-        }
-    </script>
-    <button onclick="pop()">Click</button>
+    {% if post.bibtex %}
+        <script>
+            function pop() {
+            prompt("BibTeX", post.bibtex);
+            }
+        </script>
+        <button onclick="pop()">BibTeX</button>
+    {% endif %}
     
 
   </article>
