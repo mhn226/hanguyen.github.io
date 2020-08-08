@@ -17,6 +17,29 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
+
+  <style>
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .pdfbutton {
+      background-color: white; 
+      color: black; 
+      border: 2px solid #4CAF50;
+    }
+  </style>
+
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
@@ -63,7 +86,7 @@
     {% endif %}
     {% if post.paperurl %}
       <a href=" {{ post.paperurl }} " download>
-        <button>PDF</button>
+        <button class="pdfbutton">PDF</button>
       </a>
     {% endif %}
 
