@@ -17,6 +17,23 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
+  <style>
+    .pdfbutton {
+      width: 40px;
+      height: 40px;
+      margin-top: -10px;
+      background-color: white;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+
+    .p-inline{
+      display: inline;
+    }
+  </style>
+
+
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
@@ -49,8 +66,8 @@ layout: default
           <p>Recommended citation: {{ page.citation }} </p>
         {% endif %}
         {% if page.paperurl %}
-          <a href=" {{ page.paperurl }} " download>
-            <button>PDF</button>
+          <a href=" {{ post.paperurl }} " download>
+            <button class="pdfbutton"><img src="{{ base_path }}/images/rsz_app-pdf-icon.png" width="40px" height="40px" border="0"/></button>
           </a>
         {% endif %}
     
