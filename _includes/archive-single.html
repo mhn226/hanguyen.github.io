@@ -21,8 +21,8 @@
   <style>
     .pdfbutton {
       background: url({{ base_path }}/images/app-pdf-icon.png) no-repeat;
-      width: 100px;
-      height: 100px;
+      width: 20px;
+      height: 20px;
       cursor: pointer;
       float: left;
     }
@@ -74,7 +74,7 @@
     {% endif %}
     {% if post.paperurl %}
       <a href=" {{ post.paperurl }} " download>
-        <button><img src="{{ base_path }}/images/app-pdf-icon.png" width="30" height="30"/></button>
+        <button class="pdfbutton"></button>
       </a>
     {% endif %}
 
