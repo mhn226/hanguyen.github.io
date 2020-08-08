@@ -188,17 +188,18 @@
     &:hover {
       color: $masthead-link-color-hover;
     }
-  }
 
-    /*&.site-logo { */
-    /*  margin-left: 0; */
-    /*  margin-right: 0.5rem; */
-    /*} */
+    &.site-logo { 
+      margin-left: 0; 
+      margin-right: 0.5rem;
+      float: left 
+    } 
 
-    /*&.site-title { */
-    /*  margin-left: 0; */
-    /*} */
-  /*} */
+    &.site-title { 
+      margin-left: 0;
+      float: left 
+    } 
+  } 
 
   &__toggle {
     -ms-flex-item-align: center;
