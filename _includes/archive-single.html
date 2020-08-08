@@ -75,11 +75,6 @@
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }} </p>
     {% endif %}
-    {% if post.paperurl %}
-      <a href=" {{ post.paperurl }} " download>
-        <button class="pdfbutton"><img src="{{ base_path }}/images/rsz_app-pdf-icon.png" width="40px" height="40px" border="0"/></button>
-      </a>
-    {% endif %}
 
   </article>
 </div>
