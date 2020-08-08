@@ -48,7 +48,7 @@ layout: default
         {% elsif page.citation %}
           <p>Recommended citation: {{ page.citation }} </p>
         {% endif %}
-        {% elsif page.paperurl %}
+        {% if page.paperurl %}
           <a href=" {{ page.paperurl }} " download>
             <button>PDF</button>
           </a>
