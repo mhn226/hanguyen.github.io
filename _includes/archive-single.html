@@ -12,6 +12,10 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% if post.bibtex %}
+  {% assign bibtex = post.bibtex %}
+{% endif %}
+
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -61,9 +65,8 @@
     {% endif %}
     {% if post.bibtex %}
         <script>
-            var input = {{ post.bibtex }}
             function pop() {
-                prompt("BibTeX", input);
+                prompt("BibTeX", bibtex);
             }
         </script>
         <button onclick="pop()">BibTeX</button>
