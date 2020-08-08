@@ -59,10 +59,11 @@
     {% elsif post.paperurl %}
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}
-
-    function pop() {
-    prompt("Enter something!", "Text");
-    }
+    <script>
+        function pop() {
+        prompt("Enter something!", "Text");
+        }
+    </script>
     <button onclick="pop()">Click</button>
     
 
