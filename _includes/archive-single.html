@@ -59,6 +59,9 @@
     {% elsif post.paperurl %}
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}
+    {% if post.bibtex %}
+      <p>Download <a href=" {{ post.bibtex }} "><u>here</u></a></p>
+    {% endif %}
 
   </article>
 </div>
