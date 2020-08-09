@@ -29,6 +29,16 @@
       outline: none;
     }
 
+    .bibtexbutton {
+      width: 100px;
+      height: 40px;
+      margin-top: -10px;
+      background-color: white;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+
     .p-inline{
       display: inline;
     }
@@ -63,7 +73,7 @@
         <a href=" {{ post.paperurl }} " download>
           <button class="pdfbutton"><img src="{{ base_path }}/images/rsz_app-pdf-icon.png" width="40px" height="40px" border="0"/></button>
         </a>
-        <li><a data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-bibtex')">BibTeX</a></li>
+        <button class="bibtexbutton" data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-bibtex')"><img src="{{ base_path }}/images/BibTeX_logo.svg.png" width="100px" height="40px" border="0"/></button>
         <div id="{{post.paperurl}}-bibtex" style="display:none;">
         <pre class="collapse">{{ post.bibtex  }}</pre>
         </div>
