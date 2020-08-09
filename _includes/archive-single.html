@@ -65,7 +65,7 @@
         </a>
         <li><a data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-bibtex')">BibTeX</a></li>
         <div id="{{post.paperurl}}-bibtex" style="display:none;">
-        <pre class="collapse">{{ post.venue  }}</pre>
+        <pre class="collapse">{{ post.bibtex  }}</pre>
         </div>
       {% elsif post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
