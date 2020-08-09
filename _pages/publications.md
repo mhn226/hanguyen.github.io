@@ -14,7 +14,9 @@ author_profile: true
 
 ### 2019
 
-{% site.publications --query @*[year=2019] %}
+{% for post in site.publications % }
+  {% post --query @*[year=2019] %}
+{% endfor %}
 
 
 ### 2020
