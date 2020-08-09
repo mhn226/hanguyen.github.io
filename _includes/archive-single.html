@@ -54,6 +54,29 @@
       }
   </script>
 
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+
+    $(function() {
+
+
+   var people = [];
+
+   $.getJSON('{{ base_path }}/_publications/people.json', function(data) {
+       $.each(data.person, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
+           "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+     });
+
+   });
+
+});
+</script>
+
+
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
@@ -107,6 +130,24 @@
     {% endif %}
     <p>{{ post.authors }}</p>
     <p>{{ post.abstract }}</p>
+
+    <div class="wrapper">
+<div class="profile">
+   <table id= "userdata" border="2">
+  <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>City</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
+
 
   </article>
 </div>
