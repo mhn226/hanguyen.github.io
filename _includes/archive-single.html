@@ -110,10 +110,12 @@
 
     <h4 class="archive__item-title" itemprop="headline">
       {% if post.paperurl %}
-        <p class="p-inline"><em><a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a></em></p>
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        <p class="p-inline"><em>
         <a href=" {{ post.paperurl }} " download>
           <button class="pdfbutton"><img src="{{ base_path }}/images/rsz_app-pdf-icon.png" width="40px" height="40px" border="0"/></button>
         </a>
+        </em></p>
         <a data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-bibtex')">
           <button class="bibtexbutton"><img src="{{ base_path }}/images/BibTeX_logo.svg.png" width="60px" height="25px" border="0"/></button>
         </a>
@@ -147,7 +149,6 @@
       <p>Recommended citation: {{ post.citation }} </p>
     {% endif %}
     <p>{{ post.authors }}</p>
-    <p>{{ post.abstract }}</p>
     <button class="abstractbutton" style="vertical-align:middle"><span>Hover </span></button>
 
   </article>
