@@ -1,6 +1,4 @@
 {% include base_path %}
-{% include head %}
-
 
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
@@ -35,6 +33,17 @@
       display: inline;
     }
   </style>
+
+  <script language="JavaScript" type="text/javascript">
+    <!--
+    function toggleDiv(element){
+      if(document.getElementById(element).style.display == 'none')
+        document.getElementById(element).style.display = 'block';
+      else
+        document.getElementById(element).style.display = 'none';
+    }
+    //-->
+  </script>
 
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
