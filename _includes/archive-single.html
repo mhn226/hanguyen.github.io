@@ -55,11 +55,10 @@
   </script>
 
   <script type="text/javascript">
-    function loadFile(inputfile){
-      var fr = new FileReader();
-      fr.readAsText(inputfile);
-      var text = fr.result();
-      console(text);
+    function(inputfile){
+      var fs = require("fs");
+      var text = fs.readFileSync(inputfile)
+      console.log(text)
     }
   </script>
 
