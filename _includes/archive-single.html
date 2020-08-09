@@ -34,17 +34,6 @@
     }
   </style>
 
-  <script language="JavaScript" type="text/javascript">
-    <!--
-    function toggleDiv(element){
-      if(document.getElementById(element).style.display == 'none')
-        document.getElementById(element).style.display = 'block';
-      else
-        document.getElementById(element).style.display = 'none';
-    }
-    //-->
-  </script>
-
 
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -92,12 +81,21 @@
       <p>Recommended citation: {{ post.citation }} </p>
     {% endif %}
 
+
+    <script language="JavaScript" type="text/javascript">
+      function toggleDiv(element){
+        if(document.getElementById(element).style.display == 'none')
+          document.getElementById(element).style.display = 'block';
+        else
+          document.getElementById(element).style.display = 'none';
+      }
+    </script>
+    
     <li><a data-toggle="collapse" href="javascript:toggleDiv('{{key}}-bibtex')">BibTeX</a></li>
       <div id="{{key}}-bibtex" style="display:none;">
       <pre class="collapse">{{ post.paperurl  }}</pre>
     </div>
     
-    <p>Published in <i>{{ post.bibtex }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
 
   </article>
 </div>
