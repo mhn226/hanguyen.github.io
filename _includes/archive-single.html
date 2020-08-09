@@ -60,7 +60,9 @@
       var f = new File([""], inputfile); 
       var fr = new FileReader();
       fr.readAsText(f);
-      var text = fr.result;
+      reader.onload = function() {
+        var text = reader.result;
+      };
       console.log("aaaaaaaaaaaaaaa");
       console.log(text);
     }
