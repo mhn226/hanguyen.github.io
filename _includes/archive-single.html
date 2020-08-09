@@ -60,8 +60,8 @@
       var f = new File([""], inputfile); 
       var fr = new FileReader();
       fr.readAsText(f);
-      reader.onload = function() {
-        var text = reader.result;
+      fr.onload = function() {
+        var text = fr.result;
       };
       console.log("aaaaaaaaaaaaaaa");
       console.log(text);
