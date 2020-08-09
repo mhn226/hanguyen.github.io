@@ -12,7 +12,7 @@ author_profile: true
 {% include base_path %}
 
 
-## 2020
+### 2020
 
 {% for post in site.publications %}
   {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
@@ -22,7 +22,7 @@ author_profile: true
 {% endfor %}
 
 
-## 2019
+### 2019
 
 {% for post in site.publications %}
   {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
