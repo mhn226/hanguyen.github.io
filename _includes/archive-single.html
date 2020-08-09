@@ -80,16 +80,6 @@
       <p>Recommended citation: {{ post.citation }} </p>
     {% endif %}
 
-    <script language="JavaScript" type="text/javascript">
-      function toggleDiv(element){
-        if(document.getElementById(element).style.display == 'none')
-          document.getElementById(element).style.display = 'block';
-        else
-          document.getElementById(element).style.display = 'none';
-      }
-    </script>
-
-
     <li><a data-toggle="collapse" href="javascript:toggleDiv('{{key}}-bibtex')">BibTeX</a></li>
       <div id="{{key}}-bibtex" style="display:none;">
       <pre class="collapse">{{ post.paperurl  }}</pre>
