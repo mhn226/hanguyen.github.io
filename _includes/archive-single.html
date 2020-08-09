@@ -58,7 +58,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 
 <script>
-$(function(){
+function parseJson(){
         console.log('inside')  
         $.getJSON('{{ base_path }}/people.json',function(data){  
         $.each(data.person,function(i,person){  
@@ -126,7 +126,7 @@ $(function(){
     <p>{{ post.authors }}</p>
     <p>{{ post.abstract }}</p>
 
-    <ul></ul>
+    <ul>parseJson()</ul>
 
   </article>
 </div>
