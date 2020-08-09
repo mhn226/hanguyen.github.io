@@ -80,8 +80,8 @@
       <p>Recommended citation: {{ post.citation }} </p>
     {% endif %}
 
-    <li><a data-toggle="collapse" href="javascript:toggleDiv('{{ post.bibtex  }}')">BibTeX</a></li>
-    <div id="{{ post.bibtex  }}" style="display:none;">
+    <li><a data-toggle="collapse" href="javascript:toggleDiv('bibtex')">BibTeX</a></li>
+    <div id="bibtex" style="display:none;">
     <pre class="collapse">{{post.bibtex}}</pre>
     </div>
 
