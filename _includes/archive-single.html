@@ -55,9 +55,9 @@
   </script>
 
   <script type="text/javascript">
-    function(inputfile){
+    function readfile(inputfile){
       var fs = require("fs");
-      var text = fs.readFileSync(inputfile)
+      var text = fs.readFile(inputfile)
       console.log(text)
     }
   </script>
@@ -116,7 +116,7 @@
     <p>{{ post.authors }}</p>
     <p>{{ post.abstract }}</p>
 
-    <script>loadFile("{{ base_path }}/people.json")</script>
+    <script>readfile("{{ base_path }}/people.json")</script>
 
   </article>
 </div>
