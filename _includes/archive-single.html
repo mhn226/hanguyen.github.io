@@ -54,21 +54,6 @@
       }
   </script>
 
-  <script type="text/javascript">
-    function readfile(inputfile){
-      console.log(inputfile);
-      var f = new File([""], inputfile); 
-      var fr = new FileReader();
-      var text = "";
-      fr.readAsText(f);
-      fr.onload = function() {
-        console.log(fr.result);
-        text = fr.result;
-      };
-      console.log("aaaaaaaaaaaaaaa");
-      console.log(text);
-    }
-  </script>
 
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -124,7 +109,6 @@
     <p>{{ post.authors }}</p>
     <p>{{ post.abstract }}</p>
 
-    <script>readfile("{{ base_path }}/bibtex/people.json")</script>
 
   </article>
 </div>
