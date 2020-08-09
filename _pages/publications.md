@@ -12,18 +12,21 @@ author_profile: true
 {% include base_path %}
 
 
-### 2019
+## 2020
+
+{% for post in site.publications %}
+  {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
+  {% if year == '2020' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+
+## 2019
 
 {% for post in site.publications %}
   {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
   {% if year == '2019' %}
     {% include archive-single.html %}
   {% endif %}
-{% endfor %}
-
-
-### 2020
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
 {% endfor %}
