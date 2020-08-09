@@ -59,11 +59,14 @@
       console.log(inputfile);
       var f = new File([""], inputfile); 
       var fr = new FileReader();
+      var text = "";
       fr.readAsText(f);
       fr.onload = function() {
         console.log(fr.result);
+        text = fr.result;
       };
       console.log("aaaaaaaaaaaaaaa");
+      console.log(text);
     }
   </script>
 
