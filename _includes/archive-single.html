@@ -61,10 +61,8 @@
 function parseJson(){
         console.log('inside')  
         $.getJSON('{{ base_path }}/people.json',function(data){  
-        $.each(data.person,function(i,person){  
-        $('ul').append('  
-            <li>'+person.firstName+' '+person.lastName+'</li>');  
-        });  
+        $.each(data.person,function(i,person){
+        console.log(person.firstName) 
         }).error(function(){  
         console.log('error');  
         });  
@@ -126,7 +124,7 @@ function parseJson(){
     <p>{{ post.authors }}</p>
     <p>{{ post.abstract }}</p>
 
-    <ul>parseJson()</ul>
+    <a href="javascript:parseJson()"></a>
 
   </article>
 </div>
