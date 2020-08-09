@@ -56,7 +56,10 @@
 
   <script type="text/javascript">
     function readfile(inputfile){
-      var text = fs.readFile(inputfile);
+      var f = new File([""], inputfile); 
+      var fr = new FileReader();
+      fr.readAsText(f);
+      var text = fr.result;
       console.log(text);
     }
   </script>
