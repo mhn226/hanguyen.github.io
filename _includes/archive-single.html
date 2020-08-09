@@ -54,9 +54,9 @@
       }
   </script>
 
+  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script> 
   <script type="text/javascript">  
         $(function(){
-        console.log('inside');  
         $.getJSON('{{ base_path }}/people.json',function(data){  
         $.each(data.person,function(i,emp){  
         $('ul').append('<li>'+emp.firstName+' '+emp.lastName+'</li>');  
