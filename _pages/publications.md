@@ -11,6 +11,14 @@ author_profile: true
 
 {% include base_path %}
 
+
+### 2019
+
+{% site.publications --query @*[year=2019] %}
+
+
+### 2020
+
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
