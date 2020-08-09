@@ -54,19 +54,13 @@
       }
   </script>
 
-  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script> 
-  <script type="text/javascript">  
-        $(function(){
-        $.getJSON('{{ base_path }}/people.json',function(data){  
-        $.each(data.person,function(i,emp){  
-        $('ul').append('<li>'+emp.firstName+' '+emp.lastName+'</li>');  
-        });  
-        }).error(function(){  
-        console.log('error');  
-        });  
-        });  
+  <script type="text/javascript">
+    function loadFile(inputfile){
+      var fr = new FileReader();
+      var x = fr.readAsText(inputfile)
+      console.log(x)
+    }
   </script>
-
 
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -121,6 +115,8 @@
     {% endif %}
     <p>{{ post.authors }}</p>
     <p>{{ post.abstract }}</p>
+
+    <script>loadFile(people.json)</script>
 
   </article>
 </div>
