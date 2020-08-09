@@ -15,7 +15,9 @@ author_profile: true
 ### 2019
 
 {% for post in site.publications % }
-  {% post --query @*[year=2019] %}
+  {% if post.year == '2019'  %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
 
 
