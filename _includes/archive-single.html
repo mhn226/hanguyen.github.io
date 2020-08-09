@@ -58,9 +58,9 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 
 <script>
-
-$(function(){  
-        $.getJSON('{{ base_path }}/_publications/people.json',function(data){  
+$(function(){
+        console.log('inside')  
+        $.getJSON('{{ base_path }}/people.json',function(data){  
         $.each(data.person,function(i,person){  
         $('ul').append('  
             <li>'+person.firstName+' '+person.lastName+'</li>');  
@@ -69,7 +69,6 @@ $(function(){
         console.log('error');  
         });  
         });  
-
 </script>
 
 
