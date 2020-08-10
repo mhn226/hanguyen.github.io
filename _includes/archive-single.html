@@ -111,9 +111,10 @@
     <h3 class="archive__item-title" itemprop="headline">
       {% if post.paperurl %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-        <p class="p-inline"><em><a href=" {{ post.paperurl }} " download>
+        <div class="p-inline">
+        <a href=" {{ post.paperurl }} " download>
           <button class="pdfbutton"><img src="{{ base_path }}/images/rsz_app-pdf-icon.png" width="40px" height="40px" border="0"/></button>
-        </a></em></p>
+        </a>>
         <a data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-abstract')">
           <button class="abstractbutton"><span>Abstract </span></button>
         </a>
@@ -125,6 +126,7 @@
         </a>
         <div id="{{post.paperurl}}-bibtex" style="display:none;">
         <pre class="collapse">{{ post.bibtex  }}</pre>
+        </div>
         </div>
       {% elsif post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
