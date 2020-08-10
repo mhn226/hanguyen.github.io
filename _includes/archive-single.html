@@ -120,6 +120,12 @@
         <div id="{{post.paperurl}}-bibtex" style="display:none;">
         <pre class="collapse">{{ post.bibtex  }}</pre>
         </div>
+        <a data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-abstract')">
+          <button class="abstractbutton">Abstract </button>
+        </a>
+        <div id="{{post.paperurl}}-abstract" style="display:none;">
+        <pre class="collapse">{{ post.abstract  }}</pre>
+        </div>
       {% elsif post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
