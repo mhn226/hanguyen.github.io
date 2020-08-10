@@ -139,25 +139,21 @@
     {% endif %}
     <p style="font-size:17px"><i>{{ post.authors }}</i></p>
     <div>
-      <a data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-abstract')">
+      <a style="text-decoration: none" data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-abstract')">
         <button class="abstractbutton"><span>Abstract </span></button>
       </a>
       <div id="{{post.paperurl}}-abstract" style="display:none;">
         <pre class="collapse">{{ post.abstract  }}</pre>
       </div>
-      <a href=" {{ post.paperurl }} " download>
+      <a style="text-decoration: none" href=" {{ post.paperurl }} " download>
         <button class="pdfbutton"><img src="{{ base_path }}/images/rsz_app-pdf-icon.png" width="40px" height="40px" border="0"/></button>
       </a>
-      <a data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-bibtex')">
+      <a style="text-decoration: none" data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-bibtex')">
         <button class="bibtexbutton"><img src="{{ base_path }}/images/BibTeX_logo.svg.png" width="60px" height="25px" border="0"/></button>
       </a>
       <div id="{{post.paperurl}}-bibtex" style="display:none;">
         <pre class="collapse">{{ post.bibtex  }}</pre>
       </div>
-      <i>abcdcdcdcdcdcdc</i>
-      <a>abcdcdcdcdcdcdc</a>
-      <a>ddcdcdcdcdcdcddcd</a>
-      <i>abcdcdcdcdcdcdc</i>
     </div>
 
   </article>
