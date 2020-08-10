@@ -46,9 +46,9 @@
       border: none;
       color: #FFFFFF;
       text-align: center;
-      font-size: 28px;
-      padding: 20px;
-      width: 200px;
+      font-size: 10px;
+      height: 25px;
+      width: 60px;
       transition: all 0.5s;
       cursor: pointer;
       margin: 5px;
@@ -66,12 +66,12 @@
       position: absolute;
       opacity: 0;
       top: 0;
-      right: -20px;
+      right: -5px;
       transition: 0.5s;
     }
 
     .abstractbutton:hover span {
-      padding-right: 25px;
+      padding-right: 5px;
     }
 
     .abstractbutton:hover span:after {
@@ -147,7 +147,7 @@
       <p>Recommended citation: {{ post.citation }} </p>
     {% endif %}
     <p>{{ post.authors }}</p>
-    <button class="abstractbutton" style="vertical-align:middle"><span>Hover </span></button>
+    <button class="abstractbutton" style="vertical-align:middle"><span>Abstract </span></button>
 
   </article>
 </div>
