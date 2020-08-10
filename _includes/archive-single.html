@@ -108,7 +108,7 @@
       </div>
     {% endif %}
 
-    <h3 class="archive__item-title" itemprop="headline">
+    <h3 style="font-size:25px" class="archive__item-title" itemprop="headline">
       {% if post.paperurl %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
         <div>
@@ -155,23 +155,7 @@
       <p>Recommended citation: {{ post.citation }} </p>
     {% endif %}
     <p style="font-size:17px">{{ post.authors }}, {{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}.</p>
-    <div>
-          <a href=" {{ post.paperurl }} " download>
-            <button class="pdfbutton"><img src="{{ base_path }}/images/rsz_app-pdf-icon.png" width="40px" height="40px" border="0"/></button>
-          </a>
-          <a data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-abstract')">
-            <button class="abstractbutton"><span>Abstract </span></button>
-          </a>
-          <div id="{{post.paperurl}}-abstract" style="display:none;">
-            <pre class="collapse">{{ post.abstract  }}</pre>
-          </div>
-          <a data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-bibtex')">
-            <button class="bibtexbutton"><img src="{{ base_path }}/images/BibTeX_logo.svg.png" width="60px" height="25px" border="0"/></button>
-          </a>
-          <div id="{{post.paperurl}}-bibtex" style="display:none;">
-            <pre class="collapse">{{ post.bibtex  }}</pre>
-          </div>
-        </div>
+
 
   </article>
 </div>
