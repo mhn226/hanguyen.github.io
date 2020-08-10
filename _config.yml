@@ -84,9 +84,9 @@ author:
   avatar           : "profile_pic.jpg"
   bio              : "NLP Phd student"
   location         : "Grenoble, France"
-  employer         : "LIG, Université Grenoble Alpes & LIA, Avignon Université"
+  employer         : "LIG, Université Grenoble Alpes"
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "mhn.22692" 
   email            : "manh-ha.nguyen@univ-grenobl-alpes.fr"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
