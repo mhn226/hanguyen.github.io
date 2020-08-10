@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-My detailed resume could be found [here]()
+My detailed resume could be found [here](https://mhn226.github.io/files/HaNguyen_CV.pdf)
 
 Education
 ======
