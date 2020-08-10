@@ -138,23 +138,25 @@
       <p>Recommended citation: {{ post.citation }} </p>
     {% endif %}
     <p style="font-size:17px"><i>{{ post.authors }}</i></p>
-    <div>
-      <a style="text-decoration: none" data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-abstract')">
-        <button class="abstractbutton"><span>Abstract </span></button>
-      </a>
-      <div id="{{post.paperurl}}-abstract" style="display:none;">
-        <pre class="collapse">{{ post.abstract  }}</pre>
+    {% if post.collection == 'publications' %}
+      <div>
+        <a style="text-decoration: none" data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-abstract')">
+          <button class="abstractbutton"><span>Abstract </span></button>
+        </a>
+        <div id="{{post.paperurl}}-abstract" style="display:none;">
+          <pre class="collapse">{{ post.abstract  }}</pre>
+        </div>
+        <a style="text-decoration: none" href=" {{ post.paperurl }} " download>
+          <button class="pdfbutton"><img src="{{ base_path }}/images/rsz_app-pdf-icon.png" width="40px" height="40px" border="0"/></button>
+        </a>
+        <a style="text-decoration: none" data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-bibtex')">
+          <button class="bibtexbutton"><img src="{{ base_path }}/images/BibTeX_logo.svg.png" width="60px" height="25px" border="0"/></button>
+        </a>
+        <div id="{{post.paperurl}}-bibtex" style="display:none;">
+          <pre class="collapse">{{ post.bibtex  }}</pre>
+        </div>
       </div>
-      <a style="text-decoration: none" href=" {{ post.paperurl }} " download>
-        <button class="pdfbutton"><img src="{{ base_path }}/images/rsz_app-pdf-icon.png" width="40px" height="40px" border="0"/></button>
-      </a>
-      <a style="text-decoration: none" data-toggle="collapse" href="javascript:toggleDiv('{{ post.paperurl }}-bibtex')">
-        <button class="bibtexbutton"><img src="{{ base_path }}/images/BibTeX_logo.svg.png" width="60px" height="25px" border="0"/></button>
-      </a>
-      <div id="{{post.paperurl}}-bibtex" style="display:none;">
-        <pre class="collapse">{{ post.bibtex  }}</pre>
-      </div>
-    </div>
+    {% endif %}
 
   </article>
 </div>
