@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+My detailed resume could be found [here]()
+
 Education
 ======
 * B.S. in Electronics and Communications, Hanoi University of Science and Technology (HUST), 2015
