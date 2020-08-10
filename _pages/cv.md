@@ -13,7 +13,8 @@ Education
 ======
 * B.S. in Electronics and Communications, Hanoi University of Science and Technology (HUST), 2015
 * M.S. in Artificial Intelligence and the Web,  Institut polytechnique de Grenoble (Grenoble INP) , 2018
-* Ph.D in Machine Translation, Université grenoble Alpes (UGA) & Avignon Université (AU), currently
+* Ph.D in Machine Translation, Université grenoble Alpes (UGA) & Avignon Université (AU), started in 2019
+  * Supervisors: Laurent Besacier, Yannick Estève
 
 Work experience
 ======
