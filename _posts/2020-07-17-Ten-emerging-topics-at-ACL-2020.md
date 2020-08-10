@@ -8,4 +8,4 @@ header:
   image: "/images/ACL_blog_2020_blue.jpg"
 ---
 
-I was contributing to this [blog post](https://europe.naverlabs.com/blog/ten-emerging-topics-at-acl-2020/) of NAVER and LIG.
+I was contributing to this [blog post](https://europe.naverlabs.com/blog/ten-emerging-topics-at-acl-2020/) of NAVER LABS Europe and LIG.
