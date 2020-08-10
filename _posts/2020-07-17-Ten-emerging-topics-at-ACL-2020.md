@@ -4,7 +4,7 @@ permalink: /posts/2020/07/Ten-emerging-topics-at-ACL-2020/
 tags:
   - NLP
   - ACL
-head:
+header:
   image: "/images/ACL_blog_2020_blue.jpg"
 ---
 
